@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    overflow-x:hidden;
+}
+.Top-bar-blue{
+    display:flex;
+    flex-direction:row;
+    background-color:#202ded;
+    gap:15%;
+    height:10vh;
+    justify-content:center;
+    align-items:center;
+    z-index:100;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+}
+.Top-bar-white{
+    display:flex;
+    flex-direction:row;
+    background-color:white;
+    gap:15%;
+    height:10vh;
+    justify-content:center;
+    align-items:center;
+    z-index:100;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+}
+.top-headings1{
+    color:#202ded;
+    font-family: "Inter";
+    font-weight: bold;
+    text-decoration:none;
+}
+.top-headings{
+    color:white;
+    font-family: "Inter";
+    font-weight: bold;
+    text-decoration:none;
+}
+.arrow-image{
+    width:20px;
+    height:20px;
+    transform:translateY(20%);
+}
+.heading-content{
+    background-color: #202ded;
+}
+.heading-content1{
+    transform:translateX(50%);
+    height:95vh;
+}
+.logo{
+    width:20%;
+    height:30%;
+}
+.main-heading{
+    font-family:"Inter";
+    color:white;
+    font-size:100px;
+    font-weight:bold;
+}
+.scroll-text1{
+    font-family:"Inter";
+    color:white;
+    font-size:20px;
+    width:30%;
+    transform:translateY(90%);
+}
+.scroll-text span{
+    opacity:0.5;
+}
+.scroll-animation{
+    animation-name:scroller;
+}
+.heading-content2{
+    height:100px;
+    display:flex;
+    flex-direction:column;
+    transform:translate(3%,-150%);
+}
+a.github-box{
+    border:2px solid white;
+    color:#202ded;
+    background-color:white;
+    border-radius:5px;
+    width:15%;
+    height:50%;
+    text-align: center;
+    padding:0.5%;
+    text-decoration: none;
+    font-family:"Inter";
+}
+a.documentation-box{
+    border:2px solid white;
+    color:white;
+    background-color:#202ded;
+    border-radius:5px;
+    width:15%;
+    height:50%;
+    padding:0.5%;
+    margin-top:1%;
+    text-align:center;
+    text-decoration: none;
+    font-family:"Inter";
+}
+a.top-headings:hover{
+    animation-name:"link_ani";
+    animation-duration:1s;
+}
+.animator{
+    color:white;
+    visibility: hidden;
+}
+.rolling-text{
+    background-color: white;
+    color:#202ded;
+    display:flex;
+    flex-direction:row;
+    gap:15%;
+    align-items:center;
+}
+.version5{
+    font-family:"Inter";
+    font-size:100px;
+}
+.rolling-subtext{
+    display:flex;
+    gap:2%;
+    white-space: nowrap;
+}
+#roll1{
+    animation-name: r1;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+}
+@keyframes r1{
+    66%{
+        transform:translateX(200%);
+    }
+    66.1%{
+        transform:translateX(-150%);
+    }
+}
+#roll2{
+    animation-name: r2;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+}
+@keyframes r2{
+    50%{
+        transform:translateX(150%);
+    }
+    50.1%{
+        transform:translateX(-200%);
+    }
+}
+.line-father{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+.line{
+    height:2px;
+    width:95%;
+    background-color:#202ded;
+    justify-content:center;
+}
+.line-father2{
+    display:flex;
+    flex-direction:column;
+    justify-content: right;
+    gap:30px;
+    margin-left:25%;
+    margin-top:2%;
+}
+.line2{
+    height:2px;
+    background-color:#202ded;
+    justify-content:right;
+}
+.paratext{
+    color:#202ded;
+    font-family:"Inter";
+    width:30%;
+    opacity:0.5;
+}
+.row-text{
+    display:flex;
+    gap:2%;
+}
+.paratext1{
+    color:#202ded;
+    font-family:"Inter";
+    opacity:0.5;
+}
+.Blue-Heading{
+    margin-left:25%;
+    width:60%;
+    margin-top:10%;
+    color:#202ded;
+    font-family:"Inter";
+    font-size:75px;
+    margin-bottom:30%;
+}
+.drop-down-animation1{
+    opacity:0;
+    font-family:"Inter";
+    color:#202ded;
+    font-size:75px;
+}
+.drop-down-animation2{
+    opacity:0;
+    font-family:"Inter";
+    color:#202ded;
+    font-size:75px;
+}
+#ls1{
+    width:5%;
+}
+#ls2{
+    width:5%;
+    transform:translate(300%,-50%);
+}
+#ls3{
+    width:5%;
+    transform:translate(600%,-100%);
+}
+#ls4{
+    width:5%;
+    transform:translate(900%,-150%);
+}
+#ls5{
+    width:5%;
+    transform:translate(1200%,-200%);
+}
+#ls6{
+    width:5%;
+    transform:translate(1500%,-250%);
+}
+#ls7{
+    width:5%;
+    transform:translate(1800%,-300%);
+}
+#ls8{
+    width:5%;
+    transform:translate(2100%,-350%);
+}
+.blue-bg{
+    margin-top:-50%;
+    background-color:#202ded;
+    display:flex;
+    justify-content: center;
+    align-items:baseline;
+    width:100vw;
+}
+.white-title{
+    color:white;
+    font-family:"Cormorant Garamond";
+    font-size:300px;
+    text-align:center;
+}
+.space{
+    height: 100vh;
+    color:blue;
+    width:100vw;
+}
+.chota{
+    width:10%;
+    height:5%;
+    margin-left:2.5%;
+    margin-right:2.5%;
+}
+.blue-bg-1{
+    background-color: #202ded;
+    width:100vw;
+}
+.line3{
+    background-color:white;
+    width:75%;
+    transform-origin: 0 0;
+    transform:translateX(33%);
+    height:2px;
+    margin-bottom:20px;
+}
+.small-text{
+    display:flex;
+    flex-direction:row;
+    transform:translateX(25%);
+    gap:20%;
+    margin-bottom:10%;
+}
+.st1{
+    color:white;
+    font-family:"Inter";
+    font-size:15px;
+}
+#parast1{
+    width:20%;
+}
+.stylish-circle{
+    width:25vw;
+    height:25vw;
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border-radius:50%;
+    background: repeating-conic-gradient(
+        white 0deg 15deg,
+        #202ded 15deg 30deg
+    );
+    margin-left:75%;
+    margin-top:-5%;
+    /* transform:translate(400%,10%); */
+}
+.white-circle,.orange-circle, .black-circle,.white-circle1{
+    width:25vw;
+    height:25vw;
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border-radius:50%;
+}
+.white-circle{
+    background-color:white;
+    margin-left:42.5%;
+    margin-top:-25%;
+}
+.white-circle1{
+    background-color:white;
+    margin-top:-50%;
+    margin-left:10%;
+}
+.orange-circle{
+    background-color:#FF5349;
+    margin-left:60%;
+    /* transform:translate(300%,-230%); */
+}
+.black-circle{
+    background-color:black;
+    margin-left:20%;
+    margin-top:-10%;
+    /* transform:translate(100%,-200%); */
+}
+#s1{
+    width:10vw;
+    height:10vw;
+}
+.blue-small-circle{
+    width:5vw;
+    height:5vw;
+    border-radius:50%;
+    position:absolute;
+    background-color:#202ded;
+}
+.scroll-section{
+    height:200vh;
+}
+#sa1{
+    color:#202ded;
+}
+.white-blob,.orange-blob,.stylish-blob,.black-blob,.pink-blob{
+    width:25vw;
+    height:15vw;
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border-radius:40%;
+}
+.white-blob{
+    background-color:white;
+    z-index:1;
+    margin-left:25%;
+}
+.pink-blob{
+    background-color:#FF007F;
+    margin-top:-15%;
+    margin-left:15%;
+}
+.orange-blob{
+    background-color:#FF5349;
+    z-index:2;
+    margin-left:60%;
+    margin-top:-15%;
+}
+.black-blob{
+    background-color:black;
+    z-index:2;
+    margin-left:37.5%;
+    margin-top:-15%;
+}
+.stylish-blob{
+    background: repeating-conic-gradient(
+        white 0deg 7.5deg,
+        #00000000 7.5deg 15deg
+    );
+    z-index:3;
+    margin-left:50%;
+    margin-top:-15%;
+}
+.small-blue-blob{
+    width:10vw;
+    height:5vw;
+    border-radius:40%;
+    position:absolute;
+    background-color:#202ded;
+}
+.scroll-section1{
+    height:200vh;
+}
+.animation-title{
+    color:white;
+    font-size:75px;
+    font-family:"Inter";
+    transform:translate(25%,-75%);
+}

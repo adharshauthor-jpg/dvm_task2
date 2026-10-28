@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="style_scroll.css">
+    <script src="script_scroll.js" defer></script>
+    <title>Locomotive Scroll - Detection of elements in viewport and smooth ...</title>
+</head>
+<body>
+    <div class="Top-bar-blue">
+        <p class="top-headings">Locomotive Scroll</p>
+        <p class="top-headings">Version 5.0</p>
+        <span class="top-links">
+        <a class="top-headings" href="google.com" target="_blank">Github<img class="arrow-image" src="arrow_outward_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"></a>
+        <p class="animator">_</p>
+        </span>
+        <span class="top-links">
+        <a class="top-headings" href="google.com" target="_blank">Documentation<img class="arrow-image" src="arrow_outward_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"></a>
+        <p class="animator">_</p>
+        </span>
+        <p class="top-headings"><img class="arrow-image" src="copyright_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="copyright">2026</p>
+    </div>
+    <div class="heading-content">
+        <div class="heading-content1">
+            <img class="logo" src="locomotive-scroll-logo.png" alt="loco logo">
+            <p class="main-heading"> Locomotive<br>Scroll</p>
+            <div class="scroll-text1">A lightweight scroll library for <br>modern web experiences. <br>Detection, animation, and smooth <br>scrolling — all in 9.4kB. Built on top <br>of Lenis.</div>
+        </div>
+        <div class="heading-content2">
+            <a class="github-box" href="google.com" target="_blank">View on GitHub</a>
+            <a class="documentation-box" href="google.com" target="_blank"><img class="arrow-image" src="docs_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png">  Read Documentation</a>
+        </div>
+    </div>
+    <div class="rolling-text">
+        <span class="rolling-subtext" id="roll1">
+            <img src="globe_icon.png" alt="globeicon">
+            <p class="version5">Version (5.0)</p>
+        </span>
+        <span class="rolling-subtext" id="roll2">
+            <img src="4_hearts_icon.png" alt="4heartsicon">
+            <p class="version5">Version (5.0)</p>
+        </span>
+        <span class="rolling-subtext" id="roll3">
+            <img src="hill_icon.png" alt="hillicon">
+            <p class="version5">Version (5.0)</p>
+        </span>
+    </div>
+    <div class="line-father">
+    <div class="line"></div>
+    </div>
+    <div class="line-father2">
+        <div class="row-text">
+            <p class="paratext">Built on top of Lenis</p>
+            <p class="paratext1">Latest stable release with improved touch handling and performance fixes. No more greedy <br>CSS transforms!</p>
+        </div>
+        <div class="line2"></div>
+        <div class="row-text">
+            <p class="paratext">TypeScript First</p>
+            <p class="paratext1">Fully typed. Better autocomplete, fewer bugs, happier developers.</p>
+        </div>
+        <div class="line2"></div>
+        <div class="row-text">
+            <p class="paratext">Dual Intersection Observers</p>
+            <p class="paratext1">Separate observers for simple triggers vs. continuous animations. No wasted RAF cycles.</p>
+        </div>
+        <div class="line2"></div>
+        <div class="row-text">
+            <p class="paratext">Smart Touch Detection</p>
+            <p class="paratext1">Parallax auto-disabled on mobile. Opt-in with one attribute.</p>
+        </div>
+        <div class="line2"></div>
+        <div class="row-text">
+            <p class="paratext">Production Ready</p>
+            <p class="paratext1">Accessible by default. Native scrollbar, keyboard nav, and proper cleanup for SPAs.</p>
+        </div>
+        <div class="line2"></div>
+        <div class="row-text">
+            <p class="paratext">Lightweight</p>
+            <p class="paratext1">Only 9.4kB gzipped</p>
+        </div>
+    </div>
+    <div class="Blue-Heading">
+        Version 5 is a complete rewrite. Designed for modern workflows, built on top of Lenis, and optimized for production.
+    </div>
+    <div class="drop-down-animation1" id="ls1">
+        Locomotive® Scroll
+    </div>
+    <div class="drop-down-animation2" id="ls2">
+        Locomotive® Scroll
+    </div>
+    <div class="drop-down-animation1" id="ls3">
+        Locomotive® Scroll
+    </div>
+    <div class="drop-down-animation2" id="ls4">
+        Locomotive® Scroll
+    </div>
+    <div class="drop-down-animation1" id="ls5">
+        Locomotive® Scroll
+    </div>
+    <div class="drop-down-animation2" id="ls6">
+        Locomotive® Scroll
+    </div>
+    <div class="drop-down-animation1" id="ls7">
+        Locomotive® Scroll
+    </div>
+    <div class="drop-down-animation2" id="ls8">
+        Locomotive® Scroll
+    </div>
+    <div class="blue-bg">
+        <img class="chota" src="work_faster_pic.png" alt="work faster">
+        <p class="white-title">Built-in Tools</p>
+        <img class="chota" src="work_smarter_pic.png" alt="work smarter">
+    </div>
+    <div class="blue-bg-1">
+    <div class="line3"></div>
+    <div class="small-text">
+        <p class="st1">01</p>
+        <p class="st1">In View Detection</p>
+        <p class="st1" id="parast1">Add classes, trigger callbacks, or fire custom events when elements enter the viewport. Built on Intersection Observer for native performance.</p>
+    </div>
+    <div class="scroll-section">
+        <div class="animation-title">
+            In View Detection
+        </div>
+    <div class="orange-circle">
+        <div class="blue-small-circle" id="s1"></div>
+    </div>
+    <div class="stylish-circle">
+        <div class="blue-small-circle"></div>
+    </div>
+    <div class="white-circle">
+        <div class="blue-small-circle" id="s1"></div>
+    </div>
+    <div class="black-circle">
+        <div class="blue-small-circle"></div>
+    </div>
+    <div class="white-circle1">
+        <div class="blue-small-circle"></div>
+    </div>
+    </div>
+    <div class="line3"></div>
+    <div class="small-text">
+        <p class="st1">02</p>
+        <p class="st1">Progress Tracking</p>
+        <p class="st1" id="parast1">Get real-time scroll progress (0-1) as CSS variables or JavaScript events. Perfect for progress bars, scroll-driven animations, or custom interactions.</p>
+    </div>
+    <div class="scroll-section1">
+        <div class="animation-title">Progress Tracking</div>
+        <div class="white-blob">
+            <div class="small-blue-blob"></div>
+        </div>
+        <div class="orange-blob">
+            <div class="small-blue-blob"></div>
+        </div>
+        <div class="stylish-blob">
+            <div class="small-blue-blob"></div>
+        </div>
+        <div class="black-blob"></div>
+        <div class="pink-blob">
+            <div class="small-blue-blob"></div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
